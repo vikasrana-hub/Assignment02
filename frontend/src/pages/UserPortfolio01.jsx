@@ -12,7 +12,7 @@ const UserPortfolio01 = () => {
         try {
 
 
-            const res = await axios.get(`http://localhost:3000/api/getUserInfo/${id}`)
+            const res = await axios.get(`https://assignment02-rt3u-kvr2m5ca1-vikas-projects-987d5ea3.vercel.app/api/getUserInfo/${id}`)
             console.log(res.data);
             setUser(res.data);
 
