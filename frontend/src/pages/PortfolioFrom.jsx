@@ -42,7 +42,7 @@ const PortfolioFormBuilder = () => {
 
     const formSubmissionHandler = async(e) => {
         e.preventDefault();
-        const res = await axios.post('http://localhost:3000/api/userInfo',formData)
+        const res = await axios.post('https://assignment02-rt3u-kvr2m5ca1-vikas-projects-987d5ea3.vercel.app/api/userInfo',formData)
         if(res.status===200){
             alert("Form Data Submitted Successfully")
             window.location.href=`/Portfolio/${res.data.template}/${res.data.userid}`
