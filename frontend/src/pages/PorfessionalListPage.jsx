@@ -13,7 +13,7 @@ const PortfolioGallery = () => {
     useEffect(() => {
         const fetchPortfolios = async () => {
             try {
-                const response = await axios.get("https://assignment02-rt3u-kvr2m5ca1-vikas-projects-987d5ea3.vercel.app/api/getUserInfo");
+                const response = await axios.get("https://assignment02-rt3u.vercel.app/api/getUserInfo");
                 
                 setPortfolios(response.data);
                 setFilteredPortfolios(response.data);
